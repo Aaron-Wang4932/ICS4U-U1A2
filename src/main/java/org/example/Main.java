@@ -6,7 +6,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
-import javax.tools.Tool;
 
 public class Main extends JFrame implements ActionListener, KeyListener {
 
