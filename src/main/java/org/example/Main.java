@@ -132,9 +132,9 @@ public class Main extends JFrame implements ActionListener, KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
-        if(!Character.isDigit(e.getKeyChar()) && e.getKeyChar() != '.') {
+        if(!Character.isDigit(e.getKeyChar()) && e.getKeyChar() != '.' && e.getKeyChar() != KeyEvent.VK_BACK_SPACE) {
             e.consume();
-            if(e.getKeyChar() != KeyEvent.VK_BACK_SPACE) Toolkit.getDefaultToolkit().beep();
+            Toolkit.getDefaultToolkit().beep();
         }
     }
 
